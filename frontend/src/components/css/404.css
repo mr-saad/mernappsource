@@ -1,0 +1,14 @@
+.Err404 {
+  width: 100%;
+  height: 84.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .Err404 {
+    height: 81.5vh;
+  }
+}

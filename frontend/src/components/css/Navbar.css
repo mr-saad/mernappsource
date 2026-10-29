@@ -1,0 +1,38 @@
+.navbar-brand {
+  position: relative;
+}
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background: #fff;
+  width: 0;
+  height: 1px;
+  animation: brand 5s ease-in-out infinite;
+  -webkit-animation: brand 5s ease-in-out infinite;
+}
+.navbar-brand::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  background: #fff;
+  width: 0;
+  height: 1px;
+  animation: brand 5s ease-in-out infinite;
+  -webkit-animation: brand 5s ease-in-out infinite;
+}
+
+@keyframes brand {
+  0%,
+  100% {
+    width: 0;
+  }
+  30%,
+  40%,
+  50%,
+  60% {
+    width: 2.5rem;
+  }
+}
